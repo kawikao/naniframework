@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rows>
+    <row>
+        <userid>1</userid>
+        <parentid>0</parentid>
+        <data></data>
+        <row>
+            <userid>2</userid>
+            <parentid>1</parentid>
+            <data>data2</data>
+            <row>
+                <userid>3</userid>
+                <parentid>2</parentid>
+                <data>data3</data>
+            </row>
+        </row>
+    </row>
+    <row>
+        <userid>4</userid>
+        <parentid>0</parentid>
+        <data>data4</data>
+    </row>
+    <row>
+        <userid>5</userid>
+        <parentid>0</parentid>
+        <data>data5</data>
+    </row>
+</rows>

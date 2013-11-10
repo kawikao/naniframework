@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rows><row><userid>1</userid><parentid>0</parentid><data></data><lft>1</lft><rgt>4</rgt><row><userid>2</userid><parentid>1</parentid><data>data2</data><lft>2</lft><rgt>3</rgt></row></row><row><userid>4</userid><parentid>0</parentid><data>data4</data><lft>5</lft><rgt>6</rgt></row><row><userid>5</userid><parentid>0</parentid><data>data5</data><lft>7</lft><rgt>8</rgt></row></rows>
