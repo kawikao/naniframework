@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos  -->
+			<title>Docs For Class Nani_Tree_Adapter_Abstract</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+						<script src="../../media/lib/classTree.js"></script>
+												<script language="javascript" type="text/javascript">
+				var imgPlus = new Image();
+				var imgMinus = new Image();
+				imgPlus.src = "../../media/images/plus.png";
+				imgMinus.src = "../../media/images/minus.png";
+				
+				function showNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgMinus.src;
+					oTable.style.display = "block";
+				}
+				
+				function hideNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgPlus.src;
+					oTable.style.display = "none";
+				}
+				
+				function nodeIsVisible(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+									break;
+							}
+					return (oTable && oTable.style.display == "block");
+				}
+				
+				function toggleNodeVisibility(Node){
+					if (nodeIsVisible(Node)){
+						hideNode(Node);
+					}else{
+						showNode(Node);
+					}
+				}
+			</script>
+					</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/AbstractClass_logo.png"
+														alt="Abstract Class"
+														title="Abstract Class"
+														style="vertical-align: middle"> Nani_Tree_Adapter_Abstract</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Class for common operations</p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Copyright (c) 2010 Kawika Ohumukini (http://code.google.com/p/naniframework/)</li>
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">license:</span> <a href="http://opensource.org/licenses/bsd-license.php">New BSD License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Tree---Adapter---Abstract.php.html">/Tree/Adapter/Abstract.php</a> (line <span class="field"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a23">23</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../Nani_Tree/Adapter/Nani_Tree_Adapter_Array.html">Nani_Tree_Adapter_Array</a>
+					</td>
+					<td>
+											
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em; white-space: nowrap">
+						<img src="../../media/images/Class.png"
+								 alt=" class"
+								 title=" class"
+								 style="vertical-align: center"/>
+						<a href="../../Nani_Tree/Adapter/Nani_Tree_Adapter_Xml.html">Nani_Tree_Adapter_Xml</a>
+					</td>
+					<td>
+											
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																								<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$_data" title="details" class="var-name">$_data</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_options" title="details" class="var-name">$_options</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$_rows" title="details" class="var-name">$_rows</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendants</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																							
+				<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">Nani_Tree_Adapter_Abstract</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$sourceData</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addChild" title="details" class="method-name">addChild</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addSection" title="details" class="method-name">addSection</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$section</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addSibling" title="details" class="method-name">addSibling</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#deleteNode" title="details" class="method-name">deleteNode</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#deleteSection" title="details" class="method-name">deleteSection</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#enumerateNodes" title="details" class="method-name">enumerateNodes</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$tree</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#findItem" title="details" class="method-name">findItem</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$bind</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$fetchMode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#findRoot" title="details" class="method-name">findRoot</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$childid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">result</span>
+										<a href="#getOutput" title="details" class="method-name">getOutput</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">result</span>
+										<a href="#getRows" title="details" class="method-name">getRows</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isChild" title="details" class="method-name">isChild</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$parentid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isDirectChild" title="details" class="method-name">isDirectChild</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$parentid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isParent" title="details" class="method-name">isParent</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$parentid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#isSibling" title="details" class="method-name">isSibling</a>
+											(<span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$siblingid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#listAllChildren" title="details" class="method-name">listAllChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#listDirectChildren" title="details" class="method-name">listDirectChildren</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#listParents" title="details" class="method-name">listParents</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$childid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#listSiblings" title="details" class="method-name">listSiblings</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$childid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#listTree" title="details" class="method-name">listTree</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$bind</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$fetchMode</span> = <span class="var-default">null</span>])
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#moveNode" title="details" class="method-name">moveNode</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$newparentid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#moveNodeLeft" title="details" class="method-name">moveNodeLeft</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#moveNodeRight" title="details" class="method-name">moveNodeRight</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#moveNodeUp" title="details" class="method-name">moveNodeUp</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$levelsup</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setInputAdapter" title="details" class="method-name">setInputAdapter</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setReturnAdapter" title="details" class="method-name">setReturnAdapter</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/AbstractMethod.png" alt=" "/>
+											<span class="method-result">mixed</span>
+										<a href="#writeTree" title="details" class="method-name">writeTree</a>
+										()
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$_data" id="$_data"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_data</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a30">30</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Incoming data can be XML string, XML filename, array or database object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_options" id="$_options"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_options</span>
+			 = <span class="var-default">array(<br />        'startleft' =&gt; 1, <br />        'rowtag' =&gt; null, <br />        'rowidtag' =&gt; null, <br />        'parentidtag' =&gt; null, <br />        'formatOutput' =&gt; true, <br />        'encoding' =&gt; 'utf-8', <br />        //'columnPrefix =&gt; null, <br />    )</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a44">44</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Options for building rows and connecting to database</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_rows" id="$_rows"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_rows</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a37">37</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Nested set tree</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a61">61</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">receives mixed data from adapter, converts to array, builds tree  then calls output adapter's writeTree() function to handle the results</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Nani_Tree_Adapter_Abstract</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$sourceData</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$sourceData</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddChild" id="addChild"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">addChild</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a272">272</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addChild
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$parentid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddSection" id="addSection"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">addSection</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a270">270</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addSection
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$section</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$section</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$parentid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddSibling" id="addSibling"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">addSibling</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a271">271</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addSibling
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$parentid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteNode" id="deleteNode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">deleteNode</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a283">283</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteNode
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddeleteSection" id="deleteSection"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">deleteSection</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a284">284</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			deleteSection
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodenumerateNodes" id="enumerateNodes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">enumerateNodes</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a266">266</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			enumerateNodes
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$tree</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$tree</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfindItem" id="findItem"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">findItem</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a255">255</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			findItem
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$bind</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$fetchMode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sql</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$bind</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$fetchMode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodfindRoot" id="findRoot"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">findRoot</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a256">256</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			findRoot
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$childid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$childid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetOutput" id="getOutput"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">getOutput</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a240">240</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> defined by adapter</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">result</span>
+		<span class="method-name">
+			getOutput
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetRows" id="getRows"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">getRows</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a233">233</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">return:</span> array</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">result</span>
+		<span class="method-name">
+			getRows
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisChild" id="isChild"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">isChild</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a327">327</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check if childid is a descendant of parentid  child can be any number of levels deep</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if childid is a descendant of parentid</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isChild
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$parentid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$parentid</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$childid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisDirectChild" id="isDirectChild"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">isDirectChild</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a297">297</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check if childid is a direct descendant of parentid</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if child is a direct descendant of parentid</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isDirectChild
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$parentid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$parentid</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$childid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisParent" id="isParent"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">isParent</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a337">337</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check if parentid is a parent of childid  parent can be any number of levels above child</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if childid is a descendant of parentid</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isParent
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$parentid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$parentid</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$childid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisSibling" id="isSibling"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">isSibling</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a346">346</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">check if siblingid and childid have same parentid</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true if childid is a descendant of parentid</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isSibling
+		</span>
+					(<span class="var-type">integer</span>&nbsp;<span class="var-name">$childid</span>, <span class="var-type">integer</span>&nbsp;<span class="var-name">$siblingid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$childid</span>			</li>
+					<li>
+				<span class="var-type">integer</span>
+				<span class="var-name">$siblingid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlistAllChildren" id="listAllChildren"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">listAllChildren</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a263">263</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			listAllChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$parentid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlistDirectChildren" id="listDirectChildren"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">listDirectChildren</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a262">262</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			listDirectChildren
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$parentid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$parentid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlistParents" id="listParents"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">listParents</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a264">264</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			listParents
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$childid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$childid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlistSiblings" id="listSiblings"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">listSiblings</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a265">265</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			listSiblings
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$childid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$childid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodlistTree" id="listTree"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">listTree</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a261">261</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			listTree
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$sql</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$bind</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$fetchMode</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$sql</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$bind</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$fetchMode</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmoveNode" id="moveNode"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">moveNode</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a277">277</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			moveNode
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$newparentid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeid</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$newparentid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmoveNodeLeft" id="moveNodeLeft"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">moveNodeLeft</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a278">278</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			moveNodeLeft
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmoveNodeRight" id="moveNodeRight"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">moveNodeRight</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a279">279</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			moveNodeRight
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmoveNodeUp" id="moveNodeUp"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">moveNodeUp</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a276">276</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			moveNodeUp
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$nodeid</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$levelsup</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$nodeid</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$levelsup</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetInputAdapter" id="setInputAdapter"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">setInputAdapter</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a250">250</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setInputAdapter
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsetReturnAdapter" id="setReturnAdapter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">setReturnAdapter</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a251">251</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setReturnAdapter
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodwriteTree" id="writeTree"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/AbstractMethod.png" />
+		<span class="method-title">writeTree</span> (line <span class="line-number"><a href="../../__filesource/fsource_Nani_Tree_Adapter_TreeAdapterAbstract.php.html#a388">388</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Return tree via called adapter</p>
+<p class="description"><p>If adapter is xml, returned datatype is valid XML string  If adapter is array, returned datatype is array  If adapter is db, tree is written to database table</p></p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			writeTree
+		</span>
+				()
+			</div>
+	
+		
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../../Nani_Tree/Adapter/Nani_Tree_Adapter_Array.html#methodwriteTree">Nani_Tree_Adapter_Array::writeTree()</a>
+								: Return rows as Array
+							</li>
+					<li>
+				<a href="../../Nani_Tree/Adapter/Nani_Tree_Adapter_Xml.html#methodwriteTree">Nani_Tree_Adapter_Xml::writeTree()</a>
+								: Format rows as XML
+							</li>
+				</ul>
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Mon, 01 Mar 2010 10:17:56 -0800 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
